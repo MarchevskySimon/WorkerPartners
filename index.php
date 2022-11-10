@@ -133,6 +133,8 @@
             <li>+421 950 231 871</li>
         </ul>
     </footer>
+    
+    <a href="contact/Footer.html">AAAAAAAA</a>
 
     <script>
         var ParallaxDiv = document.querySelector(".paralax_img");
