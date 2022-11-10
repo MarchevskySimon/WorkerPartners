@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- MAIN -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- MEDIA Q. -->
+    <link rel="stylesheet" href="../css/media_q/media_q.css">
+
+    <script src="https://kit.fontawesome.com/45ed74cd20.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav>
+        <a class="home_link" href="worker_partners_DE.html">
+            <img src="../img/W.svg" alt="Home link LOGO">
+        </a>
+
+        <ul>
+            <li>
+                <a href="../index.html">SK</a>
+            </li>
+            <li>
+                <a href="worker_partners_DE.html"><span>DE</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BACKGROUND W -->
+
+    <div class="bc_W">
+        <img src="../img/WP_logo_white.svg" alt="LOGO">
+        <div class="dark"></div>
+    </div>
+
+    <span class="dis"></span>
+    <span class="dis_b"></span>
+
+    <!-- HEADER -->
+
+    <header>
+        <ul class="ul_anim_container">
+            <li><a href="#main">Wer wir sind ?</a></li>
+            <li><a href="#">Jobangebote</a></li>
+            <!-- <li><a href="#">PRACOVNE FOTKY</a></li> -->
+            <li><a href="#">Kontaktiere uns</a></li>
+            <li><a href="#footer">Kontakt</a></li>
+        </ul>
+    </header>
+
+    <!-- MAIN -->
+
+    <main id="main">
+
+
+        <div class="paragraphs">
+            <h1>Über uns</h1>
+
+            <p>Unser Unternehmen ist auf dem Baumarkt und im Produktionsbereich tätig.</p>
+
+            <p>Wir vermitteln <span>qualifizierte arbeitskräfte</span> in verschiedenen Berufen. Wir arbeiten mit Bau- und Montagearbeiten</p>
+
+            <p>Unser unternehmen ist in Westeuropa, insbesondere in Deutschland, tätig.</p>
+
+            <p>Mit der konstanten Qualität unserer erbrachten Leistungen nimmt unser Unternehmen eine immer größere Dimension an. Unsere Priorität ist die Zufriedenheit unseres Partners und die Zufriedenheit unserer Mitarbeiter. Diese Dinge betrachten wir
+                als Basis des Erfolgs, denn nur so kann gebaut werden solide und langfristige Zusammenarbeit.
+            </p>
+        </div>
+
+        <div class="paralax_img">
+            <div class="tma"></div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <ul>
+            <h6>E-mail</h6>
+            <li>workerpartners@gmail.com</li>
+
+            <h6>Soziale Netzwerke</h6>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <h6>Adresse</h6>
+            <li>Worker Partners s.r.o.</li>
+            <li>Poštová 2</li>
+            <li>085 01 Bardejov</li>
+        </ul>
+
+        <ul>
+            <h6>Telefonnummern</h6>
+            <li>+421 944 902 331</li>
+            <li>+421 915 244 374</li>
+            <li>+421 950 231 871</li>
+        </ul>
+    </footer>
+
+    <script>
+        var ParallaxDiv = document.querySelector(".paralax_img");
+        var Style = getComputedStyle(ParallaxDiv).backgroundPositionY;
+
+        window.onscroll = function() {
+            ParallaxDiv.style.backgroundPositionY = ((parseInt(Style) - window.scrollY) * 0.3) + 'px';
+        }
+    </script>
+</body>
+
+</html>

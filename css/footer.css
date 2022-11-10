@@ -1,0 +1,34 @@
+/* FOOTER */
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 3rem 5rem 1rem 5rem;
+    justify-content: space-around;
+    background-color: #EEC584;
+    z-index: 7;
+}
+
+footer h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #101010;
+}
+
+footer li {
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #101010;
+}
+
+footer i {
+    font-size: 2rem;
+    transition: .2s;
+    color: #101010;
+}
+
+footer a:hover i {
+    transform: scale(1.2);
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- MAIN -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- FORM -->
+    <link rel="stylesheet" href="css/form.css">
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- MEDIA Q. -->
+    <link rel="stylesheet" href="css/media_q/media_q.css">
+
+    <script src="https://kit.fontawesome.com/45ed74cd20.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav>
+        <a class="home_link" href="index.html">
+            <img src="img/W.svg" alt="Home link LOGO">
+        </a>
+
+        <ul>
+            <li>
+                <a href="index.html"><span>SK</span></a>
+            </li>
+            <li>
+                <a href="worker_partners_DE/worker_partners_DE.html">DE</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BACKGROUND W -->
+
+    <div class="bc_W">
+        <img src="img/WP_logo_white.svg" alt="LOGO">
+        <div class="dark"></div>
+    </div>
+
+    <span class="dis"></span>
+    <span class="dis_b"></span>
+
+    <!-- HEADER -->
+
+    <header>
+        <ul class="ul_anim_container">
+            <li><a href="#main">Kto sme ?</a></li>
+            <li><a href="pracovne_ponuky/Pracovne_ponuky.html">Pracovné ponuky</a></li>
+            <!-- <li><a href="#">PRACOVNE FOTKY</a></li> -->
+            <li><a href="#">Kontaktujte nás</a></li>
+            <li><a href="#footer">Kontakt</a></li>
+        </ul>
+    </header>
+
+    <!-- MAIN -->
+
+    <main id="main">
+
+
+        <div class="paragraphs">
+            <h1>O nás</h1>
+
+            <p>Naša spoločnosť pôsobí na stavebnom trhu a vo výrobnej sfére.</p>
+
+            <p>Poskytujeme <span>kvalifikovaných pracovníkov</span> v rôznych profesiách. Pracujeme so stavbárskymi a montážnymi prácami.</p>
+
+            <p>Naša spoločnosť pôsobí v Západnej Európe, konkrétne v Nemecku.</p>
+
+            <p>S neustálou kvalitou našich služieb, ktoré poskytujeme, naša firma nadobúda stále väčší rozmer. Našou prioritou je spokojnosť nášho partnera a spokojnosť nášho zamestnanca. Tieto veci považujeme za základ úspechu, pretože len tak sa dá budovať
+                pevná a dlhodobá spolupráca.</p>
+        </div>
+
+        <div class="paralax_img">
+            <div class="tma"></div>
+        </div>
+    </main>
+
+    <!-- FORM -->
+    <div class="contact_form">
+        <form action="contact_form_code.php" method="post" id="contact_form">
+
+            <input type="email" name="mail" placeholder="Váš e-mail" class="form_design"><br>
+
+            <input type="text" name="subject" placeholder="Predmet" class="form_design"><br>
+
+            <textarea name="message" placeholder="Správa" class="form_design"></textarea><br>
+
+            <button type="submit" name="submit" class="form_design">Poslať</button>
+
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <ul>
+            <h6>E-mail</h6>
+            <li>workerpartners@gmail.com</li>
+
+            <h6>Sociálne siete</h6>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <h6>Adresa</h6>
+            <li>Worker Partners s.r.o.</li>
+            <li>Poštová 2</li>
+            <li>085 01 Bardejov</li>
+        </ul>
+
+        <ul>
+            <h6>Telefónne čísla</h6>
+            <li>+421 944 902 331</li>
+            <li>+421 915 244 374</li>
+            <li>+421 950 231 871</li>
+        </ul>
+    </footer>
+
+    <script>
+        var ParallaxDiv = document.querySelector(".paralax_img");
+        var Style = getComputedStyle(ParallaxDiv).backgroundPositionY;
+
+        window.onscroll = function() {
+            ParallaxDiv.style.backgroundPositionY = ((parseInt(Style) - window.scrollY) * 0.3) + 'px';
+        }
+    </script>
+</body>
+
+</html>
